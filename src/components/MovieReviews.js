@@ -1,7 +1,7 @@
 // Code MovieReviews Here
 import React from 'react'
 //We can destructure by using {reviews}
-function MovieReviews(props) {
+function MovieReviews({reviews}) {
 
     
    let i = 0
@@ -10,7 +10,7 @@ function MovieReviews(props) {
         
         <div className ="review-list">
         <ul>
-        {props.reviews.map(review=>
+        {reviews.map(review=>
             <div className="review">
             <li>
             <h6>{review.headline}</h6>
